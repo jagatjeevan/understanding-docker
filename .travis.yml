@@ -14,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "learn-docker-react"
-  env: "LearnDockerReact-env"
+  env: "LearnDockerReact-env-1"
   bucket_name: "elasticbeanstalk-us-east-2-153948048593"
   bucket_path": "learn-docker-react"
   on:
