@@ -4,11 +4,12 @@ language: generic
 services:
   - docker
 
-before-install:
-  - docker build -t kanhajeevan/react-docker -f Dockerfile.dev .
+# before-install:
+#   - docker build -t kanhajeevan/react-docker -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true kanhajeevan/react-docker npm run test -- --coverage
+  # - docker run -e CI=true kanhajeevan/react-docker npm run test -- --coverage
+  - docker build -t kanhajeevan/react-docker .
 
 deploy:
   provider: elasticbeanstalk
